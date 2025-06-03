@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Arimo', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background: #f7f2de;
+  border-bottom: 1px solid #000;
+  z-index: 1000;
+}
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.logo {
+  font-size: 20px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+.cart {
+  padding: 6px 16px;
+  background: #20C075;
+  color: #000000;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: 'Arimo', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero {
+  height: 100vh;
+  padding-top: 60px;
+  background: url("/images/Landing\ Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 80px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 300;
+}
+.hero hr {
+  height: 80px;
+  border: none;
+  border-left: 1px solid #fff;
+  margin: 20px 0;
+}
+.hero p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 390px;
+  max-width: 90vw;
+  background: #008F51;
+  color: #000000;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+.side-menu.open {
+  transform: translateX(0);
+}
+@media (min-width: 769px) {
+  .side-menu {
+    width: 475px;
+  }
+}
+
+.menu-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 20px;
+}
+.close-btn {
+  position: absolute;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000000;
+}
+.menu-title {
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.menu-line {
+  height: 1px;
+  width: 100%;
+  background: #000000;
+}
+
+.menu-links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.menu-links a {
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+.menu-links a:hover {
+  text-decoration: underline;
+}
+
+.checkout-link {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  padding: 40px 0;
+  text-decoration: none;
+  color: #000000;
+}
+.checkout-link:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 769px) {
+  .menu-title {
+    display: none;
+  }
+}
