@@ -46,11 +46,10 @@ html, body {
   justify-content: center;
 }
 
-
 .hero {
   height: 100vh;
   padding-top: 60px;
-  background: url("/images/Landing\ Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg") center / cover no-repeat;
+  background: url("/images/Landing Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg") center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +72,7 @@ html, body {
   font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-family: 'Arimo', sans-serif;
 }
 
 .side-menu {
@@ -119,9 +119,10 @@ html, body {
   color: #000000;
 }
 .menu-title {
-  font-size: 18px;
+  font-size: 20px;
   color: #000000;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
 }
 
 .menu-line {
@@ -165,7 +166,6 @@ html, body {
   }
 }
 
-
 .how-it-works {
   display: flex;
   flex-direction: row;
@@ -185,12 +185,13 @@ html, body {
 }
 
 .hiw-left h2 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 400;
   color: #080A08;
   line-height: 1.2;
   text-align: center;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
 }
 
 .hiw-right {
@@ -218,7 +219,7 @@ html, body {
 
 .hiw-step h3 {
   flex: 0 0 180px;
-  font-size: 0.9rem;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
   color: #080A08;
@@ -226,10 +227,15 @@ html, body {
   text-align: left;
   font-family: 'Arimo', sans-serif;
 }
+@media (min-width: 768px) {
+  .hiw-step h3 {
+    font-size: 20px;
+  }
+}
 
 .hiw-step p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 16px;
   line-height: 1.5;
   color: #080A08;
   flex: 1;
@@ -242,7 +248,6 @@ html, body {
   font-weight: 500;
 }
 
-/* Responsive Tweaks */
 @media (min-width: 768px) {
   .hiw-left {
     flex: 0 0 30%;
@@ -276,11 +281,122 @@ html, body {
 
   .hiw-step h3 {
     flex: unset;
-    font-size: 1rem;
+    font-size: 18px;
   }
 
   .hiw-step p {
-    font-size: 0.95rem;
+    font-size: 16px;
+  }
+
+  .hiw-left h2 {
+    font-size: 24px;
   }
 }
 
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.intro-card {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-left: 1px solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-card:first-child {
+  border-left: none;
+}
+
+.intro-card h2 {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: 'Arimo', sans-serif;
+  color: #080A08;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  word-break: break-word;
+}
+
+
+.subtext {
+  font-size: 20px;
+  color: #666;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+
+.intro-card img {
+  width: 80%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.intro-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #080A08;
+  margin-bottom: 1.5rem;
+  font-family: 'Arimo', sans-serif;
+}
+
+.btn-primary {
+  background: #dd4433;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #bb3322;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .intro-card {
+    border-left: none;
+    border-top: 1px solid #000;
+  }
+
+  .intro-card:first-child {
+    border-top: none;
+  }
+
+  .intro-card img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
