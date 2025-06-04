@@ -431,10 +431,11 @@ html, body {
 
 .img-wrapper img {
   width: 100%;
-  border-radius: 12px;
+  height: 340px;
   object-fit: cover;
-  height: auto;
+  border-radius: 12px;
 }
+
 
 .add-btn {
   position: absolute;
@@ -578,7 +579,7 @@ html, body {
 
   .img-wrapper img {
     height: 340px;
-    width: 100%;
+    width: 280px;
     object-fit: cover;
     border-radius: 12px;
   }
