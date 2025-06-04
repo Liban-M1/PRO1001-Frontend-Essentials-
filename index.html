@@ -18,6 +18,18 @@
         <span class="logo">FRAM</span>
         <span class="cart">0</span>
     </header>
+    <aside id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <button id="closeMenu" class="icon-btn close-btn">&times;</button>
+            <span class="menu-title">FRAM</span>
+        </div>
+        <div class="menu-line"></div>
+        <nav class="menu-links">
+            <a href="/products.html">PRODUCTS</a>
+            <a href="/contact.html">CHAT</a>
+        </nav>
+        <a href="#" class="checkout-link">CHECKOUT</a>
+    </aside>
 
     <section class="hero">
         <h1>FRAM</h1>
@@ -92,19 +104,68 @@
             </div>
         </div>
     </section>
+    <section class="popular-produce">
+        <h2>POPULAR PRODUCE</h2>
+        <div class="produce-grid">
 
-    <aside id="sideMenu" class="side-menu">
-        <div class="menu-header">
-            <button id="closeMenu" class="icon-btn close-btn">&times;</button>
-            <span class="menu-title">FRAM</span>
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Oats">
+                    <button class="add-btn">
+                        <span class="btn-text">Add to basket</span>
+                        <span class="btn-arrow">↑</span>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h4>Oats</h4>
+                    <p class="price">48 kr / kg</p>
+                </div>
+                <p>1 kg</p>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Red Onions">
+                    <button class="add-btn">
+                        <span class="btn-text">Add to basket</span>
+                        <span class="btn-arrow">↑</span>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h4>Red Onions</h4>
+                    <p class="price">48 kr / kg</p>
+                </div>
+                <p>0.5 kg</p>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="https://www.svgrepo.com/show/508699/landscape-placeholder.svg" alt="Garlic">
+                    <button class="add-btn">
+                        <span class="btn-text">Add to basket</span>
+                        <span class="btn-arrow">↑</span>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h4>Garlic</h4>
+                    <p class="price">48 kr / kg</p>
+                </div>
+                <p>0.2 kg</p>
+            </div>
+
         </div>
-        <div class="menu-line"></div>
-        <nav class="menu-links">
-            <a href="#">PRODUCTS</a>
-            <a href="#">CHAT</a>
-        </nav>
-        <a href="#" class="checkout-link">CHECKOUT</a>
-    </aside>
+    </section>
+
+    <footer class="newsletter">
+        <h1>FRAM</h1>
+        <h3>STAY UPDATED</h3>
+        <p>Sign up for our newsletter to be the first to know about new produce or other exciting news!</p>
+        <form>
+            <input type="text" placeholder="First name" required>
+            <input type="email" placeholder="E-mail address" required>
+            <button type="submit">Send</button>
+        </form>
+    </footer>
 
     <script src="/scripts/main.js"></script>
 </body>

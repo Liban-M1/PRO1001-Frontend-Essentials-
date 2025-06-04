@@ -18,3 +18,34 @@ document.addEventListener('click', (e) => {
     sideMenu.classList.remove('open');
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const addBtns = document.querySelectorAll('.add-btn, .overlay-btn');
+  const basketCount = document.getElementById('basket-count') || document.querySelector('.cart');
+  let count = 0;
+
+  addBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      count++;
+      basketCount.textContent = count;
+
+      btn.classList.add('added');
+      const textEl = btn.querySelector('.btn-text');
+      const arrowEl = btn.querySelector('.btn-arrow');
+      const original = textEl.textContent;
+
+      textEl.textContent = '✓ Added';
+      if (arrowEl) arrowEl.style.visibility = 'hidden';
+
+      setTimeout(() => {
+        btn.classList.remove('added');
+        textEl.textContent = original;
+        if (arrowEl) arrowEl.style.visibility = 'visible';
+      }, 1000);
+
+      basketCount.classList.add('bump');
+      setTimeout(() => basketCount.classList.remove('bump'), 350);
+    });
+  });
+});
