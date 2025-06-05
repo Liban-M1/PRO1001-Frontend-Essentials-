@@ -5,7 +5,6 @@ const userInput  = document.getElementById("user-input");
 const chatLog    = document.getElementById("chat-log");
 const chatError  = document.getElementById("chat-error");
 
-// Append a message bubble to the chat log
 function appendMessage(sender, text) {
   const msg = document.createElement("div");
   msg.classList.add("message", sender);
@@ -19,7 +18,6 @@ function appendMessage(sender, text) {
   chatLog.scrollTop = chatLog.scrollHeight;
 }
 
-// Show and remove typing indicator
 function showTyping() {
   const dots = document.createElement("div");
   dots.classList.add("message", "bot");
@@ -35,7 +33,6 @@ function removeTyping() {
   if (dots) dots.remove();
 }
 
-// Handle form submit
 chatForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   const userMessage = userInput.value.trim();
