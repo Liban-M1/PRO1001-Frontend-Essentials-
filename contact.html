@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FRAM Chat</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/chat.css" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+    <header class="navbar">
+        <button id="openMenu" class="icon-btn">&#9776;</button>
+        <a href="/index.html" class="logo">FRAM</a>
+        <span class="cart">0</span>
+    </header>
+    <aside id="sideMenu" class="side-menu">
+        <div class="menu-header">
+            <button id="closeMenu" class="icon-btn close-btn">&times;</button>
+            <span class="menu-title">FRAM</span>
+        </div>
+        <div class="menu-line"></div>
+        <nav class="menu-links">
+            <a href="/products.html">PRODUCTS</a>
+            <a href="/contact.html">CHAT</a>
+        </nav>
+        <a href="#" class="checkout-link">CHECKOUT</a>
+    </aside>
+<body>
+
+  <div class="chat-box">
+    <div id="chat-log" class="chat-log">
+      <div class="message bot">
+        <span class="fram-icon">FRAM</span>
+        <span class="bot-text">What can I help you with today?</span>
+      </div>
+    </div>
+
+    <div id="chat-error" class="chat-error d-none">
+      Something went wrong. Please try again.
+    </div>
+
+    <form id="chat-form" class="chat-input">
+      <textarea
+        id="user-input"
+        placeholder="Type your message..."
+        required
+      >I want to know more about the farms you work with. How did you end up partnering for this service?</textarea>
+      <button type="submit">⬆</button>
+    </form>
+  </div>
+
+  <script type="module" src="/scripts/chatbot.js"></script>
+  <script src="/scripts/main.js"></script>
+
+</body>
+</html>
