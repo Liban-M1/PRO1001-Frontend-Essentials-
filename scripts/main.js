@@ -23,11 +23,15 @@ document.addEventListener('click', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
   const addBtns = document.querySelectorAll('.add-btn, .overlay-btn');
   const basketCount = document.getElementById('basket-count') || document.querySelector('.cart');
-  let count = 0;
+
+  // Load count from localStorage or set to 0
+  let count = parseInt(localStorage.getItem('basketCount')) || 0;
+  basketCount.textContent = count;
 
   addBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       count++;
+      localStorage.setItem('basketCount', count); // Save to localStorage
       basketCount.textContent = count;
 
       btn.classList.add('added');

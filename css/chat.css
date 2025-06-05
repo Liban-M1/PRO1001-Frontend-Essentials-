@@ -1,4 +1,3 @@
-/* ---------- Reset & Base ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +8,11 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
-
-/* ---------- Background ---------- */
 body {
-  background-image: url('https://images.unsplash.com/photo-1713244649594-0c2de54f2eaa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8');
+  background-image: url("https://images.unsplash.com/photo-1713244649594-0c2de54f2eaa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -27,8 +24,6 @@ body {
   overflow: hidden;
 }
 
-
-/* ---------- Chat Box ---------- */
 .chat-box {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
@@ -42,7 +37,6 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* ---------- Chat Log & Messages ---------- */
 .chat-log {
   flex-grow: 1;
   overflow-y: auto;
@@ -73,7 +67,7 @@ body {
 }
 
 .fram-icon {
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-weight: 500;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -86,7 +80,6 @@ body {
   border-radius: 1rem;
 }
 
-/* ---------- Input Section ---------- */
 .chat-input {
   display: flex;
   gap: 0.5rem;
@@ -120,7 +113,6 @@ body {
   cursor: pointer;
 }
 
-/* ---------- Typing Indicator ---------- */
 .typing-indicator {
   font-size: 1.5rem;
   letter-spacing: 0.25rem;
@@ -128,11 +120,15 @@ body {
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
-/* ---------- Error Message ---------- */
 .chat-error {
   color: #b91c1c;
   background: #fee2e2;
@@ -145,7 +141,6 @@ body {
   display: none;
 }
 
-/* ---------- Responsive Tweaks ---------- */
 @media (max-width: 600px) {
   body {
     padding-top: 60px;
@@ -158,4 +153,3 @@ body {
     max-height: calc(100vh - 120px);
   }
 }
-

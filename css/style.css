@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .navbar {
@@ -29,25 +30,24 @@ html, body {
 
 .logo {
   font-size: 30px;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-weight: 500;
   letter-spacing: 1px;
   color: #000000;
-  text-decoration: none;   
-  display: inline-block;    
+  text-decoration: none;
+  display: inline-block;
   margin: 0;
   padding: 0;
   line-height: 1;
 }
 
-
 .cart {
   padding: 6px 16px;
-  background: #20C075;
+  background: #20c075;
   color: #000000;
   border-radius: 50px;
   font-size: 18px;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,8 @@ html, body {
 .hero {
   height: 100vh;
   padding-top: 60px;
-  background: url("/images/Landing Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg") center / cover no-repeat;
+  background: url("/images/Landing Page/markus-spiske-WcLzVLbUP5g-unsplash.jpg")
+    center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +68,7 @@ html, body {
 
 .hero h1 {
   font-size: 200px;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-weight: 300;
 }
 
@@ -82,7 +83,7 @@ html, body {
   font-size: 36px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 /* Responsive Styles */
@@ -128,7 +129,6 @@ html, body {
   }
 }
 
-
 .side-menu {
   position: fixed;
   top: 0;
@@ -136,7 +136,7 @@ html, body {
   height: 100%;
   width: 390px;
   max-width: 90vw;
-  background: #008F51;
+  background: #008f51;
   color: #000000;
   z-index: 2000;
   display: flex;
@@ -175,7 +175,7 @@ html, body {
 .menu-title {
   font-size: 30px;
   color: #000000;
-  font-family: 'Frank Ruhl Libre', sans-serif;
+  font-family: "Frank Ruhl Libre", sans-serif;
   text-transform: uppercase;
 }
 
@@ -223,7 +223,7 @@ html, body {
 .how-it-works {
   display: flex;
   flex-direction: row;
-  background-color: #F7F2DE;
+  background-color: #f7f2de;
   border-top: 2px solid rgba(0, 0, 0, 0.4);
   border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   flex-wrap: wrap;
@@ -241,10 +241,10 @@ html, body {
 .hiw-left h2 {
   font-size: 36px;
   font-weight: 400;
-  color: #080A08;
+  color: #080a08;
   line-height: 1.2;
   text-align: center;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   text-transform: uppercase;
 }
 
@@ -276,10 +276,10 @@ html, body {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #080A08;
+  color: #080a08;
   margin: 0;
   text-align: left;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 @media (min-width: 768px) {
   .hiw-step h3 {
@@ -291,14 +291,14 @@ html, body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  color: #080A08;
+  color: #080a08;
   flex: 1;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .hiw-step a {
   text-decoration: underline;
-  color: #080A08;
+  color: #080a08;
   font-weight: 500;
 }
 
@@ -377,22 +377,20 @@ html, body {
   font-weight: 400;
   text-transform: uppercase;
   line-height: 1.2;
-  font-family: 'Arimo', sans-serif;
-  color: #080A08;
+  font-family: "Arimo", sans-serif;
+  color: #080a08;
   margin-bottom: 0.5rem;
   text-align: center;
   word-break: break-word;
 }
 
-
 .subtext {
   font-size: 20px;
   color: #666;
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
-
 
 .intro-card img {
   width: 80%;
@@ -406,9 +404,9 @@ html, body {
 .intro-card p {
   font-size: 16px;
   line-height: 1.5;
-  color: #080A08;
+  color: #080a08;
   margin-bottom: 1.5rem;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .btn-primary {
@@ -419,7 +417,7 @@ html, body {
   border-radius: 25px;
   font-weight: bold;
   cursor: pointer;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 1rem;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
@@ -455,16 +453,15 @@ html, body {
   }
 }
 
-
 .popular-produce {
   padding: 2rem;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .popular-produce h2 {
   font-size: 36px;
   margin-bottom: 1.5rem;
-  font-family: 'Arimo', serif;
+  font-family: "Arimo", serif;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -476,7 +473,7 @@ html, body {
 
 .product-card {
   flex: 1;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .img-wrapper {
@@ -490,7 +487,6 @@ html, body {
   border-radius: 12px;
 }
 
-
 .add-btn {
   position: absolute;
   bottom: 20px;
@@ -501,7 +497,7 @@ html, body {
   color: #fff;
   border: none;
   border-radius: 20px;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 16px;
   cursor: pointer;
   display: flex;
@@ -545,11 +541,11 @@ html, body {
   background: #db3a2e;
   color: #fff;
   padding: 3rem 2rem;
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .newsletter h1 {
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-weight: 300;
   font-size: 48px;
   margin: 0;
@@ -559,7 +555,7 @@ html, body {
 }
 
 .newsletter h3 {
-  font-family: 'Arimo', sans-serif;
+  font-family: "Arimo", sans-serif;
   font-weight: 400;
   font-size: 36px;
   margin-top: 2.5rem;
@@ -567,7 +563,7 @@ html, body {
 }
 
 .newsletter p {
-  font-family: 'Frank Ruhl Libre', serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-weight: 300;
   font-size: 24px;
   max-width: 400px;
@@ -682,7 +678,7 @@ html, body {
 }
 
 .add-btn.added {
-  background: #20C075 !important;
+  background: #20c075 !important;
   transform: scale(1.12);
   color: black;
 }
@@ -692,7 +688,13 @@ html, body {
 }
 
 @keyframes cartBump {
-  0% { transform: scale(1); }
-  40% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
